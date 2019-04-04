@@ -1,0 +1,2 @@
+First things first, we need Python installed on the system.
+Secondly, we need certain libraries like opencv-contrib(for both opencv main and contrib modules), os(inbuilt), numpy, datetime, pillow (as a replacement of PIL that supports both python v2 and v3).
