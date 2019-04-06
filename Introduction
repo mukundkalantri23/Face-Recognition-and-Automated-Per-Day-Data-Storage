@@ -1,2 +1,3 @@
-First things first, we need Python installed on the system.
+First things first, we need Python installed on the system. While writing this program, I had Python v3.6 installed on my computer.
 Secondly, we need certain libraries like opencv-contrib(for both opencv main and contrib modules), os(inbuilt), numpy, datetime, pillow (as a replacement of PIL that supports both python v2 and v3).
+You'll also need a haarcascade classifier which basically processes the images taken from camera and 
