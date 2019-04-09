@@ -1,5 +1,5 @@
 #This file just shows that how the faces would be detected.
-
+#If you attach an external camera, you may have to configure it (I used my laptop one).  
 import cv2
 import numpy as np
 
