@@ -1,9 +1,0 @@
-First things first, we need Python installed on the system. While writing this program, I had Python v3.6 installed.
-
-Secondly, we need certain libraries like opencv-contrib(for both opencv main and contrib modules), os(inbuilt), numpy, datetime, pillow (as a replacement of PIL that supports both python v2 and v3).
-
-In the project folder, I have four python scripts (IntroToPyCV.py, datasetCreator.py, trainer.py, detector.py), one classifier file (haarcascade_frontalface_default.xml), an empty folder with the name 'dataSet' and another folder named 'recognizer' having a file named as 'trainingData.yml'.
-
-I have provided the cascade file code and the training data code which can be directly copied and pasted in a file with the same names as mentioned above.
-
-A Haar Cascade classifier is basically used to detect particular objects from the source. The haarcascade_frontalface_default.xml is a haar cascade designed by OpenCV to detect the frontal face. A Haar Cascade works by training the cascade on thousands of negative images with the positive image superimposed on it. It is capable of detecting features from the source.

@@ -1,0 +1,18 @@
+First things first, we need Python installed on the system. While writing this program, I had Python v3.6 installed.
+
+Secondly, we need certain libraries like opencv-contrib(for both opencv main and contrib modules), os(inbuilt), numpy, datetime, pillow (as a replacement of PIL that supports both python v2 and v3). You can install these libraries by using the PIP command (refer to the internet if you don't know how to use the PIP command).
+
+In the project folder, I have four python scripts (IntroToPyCV.py, datasetCreator.py, trainer.py, detector.py), one classifier file (haarcascade_frontalface_default.xml), an empty folder with the name 'dataSet' and another folder named 'recognizer' having a file named as 'trainingData.yml' inside it.
+
+I have provided the code  for all the python scripts along with the 'haarcascade_frontalface_default.xml' file and the 'trainingData.yml' file which can be directly copied and pasted in a blank text file with the same names (and extentions) as mentioned above. Do not temper with the cascade file and the training data file.
+
+When you have all the files and scripts in position, you may start executing the project in the following order:
+1. IntroToPyCV.py     
+2. datasetCreator.py 
+3. trainer.py 
+4. detector.py
+
+Further instructions and details for each file is provided in that file itself.
+
+HOPE YOU CAN GET ALL THE WORK DONE CORRECTLY.
+THAT'S ALL. THANKS!
