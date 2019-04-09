@@ -1,3 +1,12 @@
+# This code will basically open up a camera window and would try to recognize all the faces present in the frame with the 
+# help of the model trained last. For all the faces recognized, a box will appear around the face and the name of the 
+# person identified would be showed under the box. That's how you know the faces are recognized correctly!
+# A new text file is created for each day automatically (if it does not already exist), whenever the code is executed.
+# This file will have the names of all those people who have been identified (atleast once) on that day, and so it 
+# records the people who have been scanned on that day!
+
+# ATTENTION:- Make sure you have a piece of code for all the users you want to be recognized! (See Below)
+
 import cv2
 import os
 import numpy as np
@@ -27,14 +36,22 @@ while(True):
     for(x,y,w,h) in faces:
         cv2.rectangle(img,(x,y),(x+w,y+h),(0,255,0),2)
         id,conf=rec.predict(gray[y:y+h,x:x+w])
-        if(id==1):
-            id="mukund";
+        
+      # Write the code in the pattern as below, for all the users before running this script 
+        
+"""     if(id==1):
+            id="Mukund";
         if(id==2):
-            id="rdj";
+            id="Tony";
         if(id==3):
-            id="mudit";
-        if(id==4):
-            id="madhav";
+            id="Thor";
+                :
+                :
+                :            """
+
+      # The names written here will be the names that appears on the screen when a face is recognized, so make sure you write them 
+      # in front of the correct ID number!
+        
         cv2.putText(img,str(id),(x,y+h),font,2,(0,0,255),2);
         id = id + "\n"
         f = open(filename,"r")
@@ -46,6 +63,8 @@ while(True):
             f = open(filename,"a")
             f.write(id)
 
+# If you want more information to appear in the records (scanned faces file) like time or ID number, you can very well edit the code!
+        
     cv2.imshow("face",img);
     if(cv2.waitKey(1)==ord('q')):
         break;
