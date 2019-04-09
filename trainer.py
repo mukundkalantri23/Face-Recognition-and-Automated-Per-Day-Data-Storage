@@ -1,3 +1,5 @@
+#You just need to run this script. It will train the model for all users corresponding to their ID number's and pictures'.
+
 import os
 import cv2
 import numpy as np
